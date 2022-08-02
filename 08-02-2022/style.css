@@ -1,0 +1,21 @@
+.initial{
+    background-color: lightsalmon;
+    width: 40px;
+    height: 100px;
+}
+.interest{
+    background-color: aquamarine;
+    width: 40px;
+    height: 0px;
+}
+.diagram td{
+    text-align: center;
+    padding: 10px;
+    vertical-align: bottom;
+}
+.diagram th{
+    padding-left: 20px;
+}
+.diagram div{
+    margin: auto;
+}

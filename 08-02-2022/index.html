@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2>Form Investment</h2>
+    <form id="Calculator">
+        <table>
+            <tr>
+                <td>Initial Deposit</td>
+                <td>
+                    <input type="number" name="money" id="money" value="1000" required>
+                </td>
+            </tr>
+            <tr>
+                <td>How many Months</td>
+                <td>
+                    <select name="months" id="months">
+                        <option value="3">3 (minimum)</option>
+                        <option value="6">6 (half-year)</option>
+                        <option value="12">12 (1 year)</option>
+                        <option value="18">18 (1.5 years)</option>
+                        <option value="24">24 (2 years)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Interest per Year</td>
+                <td>
+                    <input type="number" id="interest" value="1" required>
+                </td>
+            </tr>
+        </table>
+        
+        <table class="diagram">
+            <tr>
+                <th>Initial Amount</th>
+                <th>With Interest</th>
+            </tr>
+            </tr>
+            <tr>
+                <th id="initialAmount"></th>
+                <th id="withInterest"></th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="initial"></div>
+                </td>
+                <td>
+                    <div class="interest" id="interestHeight"</div>
+                </td>
+            </tr>
+
+
+
+
+
+
+        </table>
+
+    </form>
+
+
+
+
+
+
+
+
+    <!-- JS LINK -->
+    <script src="./script.js"></script>
+</body>
+</html>
