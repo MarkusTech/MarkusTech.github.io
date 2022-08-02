@@ -1,22 +1,20 @@
+const colors = document.getElementsByName('colors');
+const btnToggle = document.querySelector('#btnToggle');
 
-function checkAll1() {
+btnToggle.addEventListener("click", () => {
+    let allChecked = true;
 
-    var inputs = document.querySelectorAll('.check1');
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].checked = true;
+    colors.forEach(color => {
+        if(!color.checked){
+            allChecked = false;
+        }
+    });
+
+    if(!allChecked){
+            colors.forEach(color => color.checked = true);
     }
-  
-    this.onclick = uncheckAll1;
-  }
-  
-  function uncheckAll1() {
-    var inputs = document.querySelectorAll('.check1');
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].checked = false;
+    else{
+        colors.forEach(color => color.checked = false);
     }
-  
-    this.onclick = checkAll1;
-  }
-  
-  var el = document.getElementById("btnToggle");
-  el.onclick = checkAll1;
+
+});

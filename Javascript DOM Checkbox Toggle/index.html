@@ -13,11 +13,36 @@
         <input type="checkbox" name="colors" class="check1" value="Green">Green
         <input type="checkbox" name="colors" class="check1" value="Blue">Blue
         <input type="checkbox" name="colors" class="check1" value="Yellow">Yellow
+        <button type="button">Get Selected Color</button>
     </form>
     <br>
     <button type="button" id="btnToggle">Check/Uncheck All</button>
     <br>
     <hr>
+
+
+    <!-- my solution
+function checkAll1() {
+
+    var inputs = document.querySelectorAll('.check1');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].checked = true;
+    }
+  
+    this.onclick = uncheckAll1;
+  }
+  
+  function uncheckAll1() {
+    var inputs = document.querySelectorAll('.check1');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].checked = false;
+    }
+  
+    this.onclick = checkAll1;
+  }
+  
+  var el = document.getElementById("btnToggle");
+  el.onclick = checkAll1; -->
 
 
 
