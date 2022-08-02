@@ -1,0 +1,22 @@
+.content{
+    display: flex;
+}
+section{
+    padding-top: 300px;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    height: 30vh;
+    background-color: grey;
+    font-weight: 800;
+}
+aside{
+    padding-top: 300px;
+    width: 30%;
+    height: 30vh;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    
+}

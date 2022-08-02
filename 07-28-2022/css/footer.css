@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  height: 70px;
+  background-color: black;
+}
+footer p {
+  color: white;
+}
+footer h2 {
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=footer.css.map */

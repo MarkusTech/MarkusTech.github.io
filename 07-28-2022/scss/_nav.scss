@@ -1,0 +1,44 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: black;
+    padding: 20px 20px;
+
+    .nav-link{
+        padding: 28px 0;
+
+        li{
+            display: inline-block;
+            margin: 0 15px;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 5px 0;
+                position: relative;
+            }
+            a::after{
+                content: '';
+                background: #ff3d00;
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: width 0.5s;
+            }
+            a:hover::after{
+                width: 100%;
+            }
+        }
+        .btn{
+            background-color: #ff3d00;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
